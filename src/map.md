@@ -15,7 +15,7 @@ import * as L from "npm:leaflet";
 ```js
 function displayMap() {
   const div = display(document.createElement("div"));
-  div.style = "height: 800px;";
+  div.style = "height: 400px;";
 
   const map = L.map(div).setView([51.505, -0.09], 13);
 
@@ -33,8 +33,8 @@ function displayMap() {
 }
 ```
 
-<div class="grid grid-cols-4">
-<div class="card grid-colspan-1">
+<div class="grid grid-cols-2">
+<div class="card">
     <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <style>
           @keyframes rotate {
@@ -56,7 +56,7 @@ function displayMap() {
 
 </div>
 
-<div class="card grid-colspan-3">
+<div class="card">
     ${displayMap()}
 </div>
 </div>
